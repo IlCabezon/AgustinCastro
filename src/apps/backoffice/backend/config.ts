@@ -1,5 +1,4 @@
 import dotenv from 'dotenv';
-//dotenv config
 dotenv.config();
 
 type ConfigVariables = {
@@ -8,6 +7,6 @@ type ConfigVariables = {
 };
 
 export default {
-  PORT: process.env.PORTFOLIO_PORT || 3000,
+  PORT: process.env.BACKOFFICE_PORT || 4000,
   MONGO_URI: `${process.env.MONGO_URI}`
 } as ConfigVariables;
